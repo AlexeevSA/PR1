@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Calculator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Post</h1>
+  <form action="/calc" method="post">
+    <input id="x" name="x" type="text"/>
+    <select id="calcparam" name="oper">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input id="y" name="y" type="text"/>
+    <input type="submit" value="Submit"/>
+  </form>
+<br/>
+<h1>Get</h1>
+  <form action="/getcalc" method="get">
+    <input id="getx" name="getx" type="text"/>
+    <select id="getcalcparam" name="getoper">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input id="gety" name="gety" type="text"/>
+    <input type="submit" value="Submit"/>
+  </form>
+
+</body>
+</html>
